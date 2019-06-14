@@ -1,0 +1,48 @@
+create database if not exists LoginDB;
+
+
+use LoginDB;
+
+
+
+create table User
+
+
+(
+
+Username varchar(20) primary key not null,
+
+Password varchar(20) unique,
+
+
+Age int,
+
+
+DateOfBirth date,
+
+
+Email varchar(20) unique,
+
+
+Country char(11),
+
+
+Address varchar(40),
+
+Salary double
+
+
+);
+
+
+select * from User;
+
+
+
+insert into User values('John','1234john',25,'1998-02-12','John@niit.com.cn','China','C-7, West yan an xi Lu, Shanghai',25540.50);
+
+
+
+
+
+insert into User values('Linda','1234linda',25,'1992-02-10','Linda@niit.com.cn','China','B-606, Weng Hang Lu, Haikou',20012.50);

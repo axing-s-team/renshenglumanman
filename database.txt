@@ -1,0 +1,29 @@
+create database library;
+
+create table Books(
+BookName char(20) not null,
+Auhter char(20) not null,
+Callno char(20) not null primary key,
+Years char(20) not null,
+Bookstatus char(20) not null,
+Publisher char(20) not null
+)£»
+
+
+create table User(
+Uesrname char(20) primary key,
+passwords char(20),
+IDNumber int(20)
+);
+
+insert into User values('Linda','1234','071625');
+insert into User values('Mike','1234','203545');
+insert into User values('Root','1234','123456');
+
+insert into Books values('One Hundred Years of Solitude', 'Marquez', '101-06-22', '1995', 'lend', 'Everyman'),('The Little Prince', 'Anthony', '101-06-33', '2012', 'Available', 'South Press'),('How was The Steel Tempered', 'Nikolai ostrovsky', '101-06-35', '2015', 'Available', 'South Press'),('Gone with the Wind', 'Margaret', '101-06-44','2009','Available', 'Everyman'),('Childhood', 'Gorky', '101-06-45', '2011','Available', 'Ramdom House'),('Inthe World', 'Gorky', '101-06-47', '2011', 'Available', 'Ramdom House'),('My University', 'Gorky', '101-06-49', '2011', 'Available', 'Ramdom House');
+
+
+
+
+
+
